@@ -1,6 +1,7 @@
 {
   "type": "module",
   "scripts": {
+    "setup": "cp .env.exemple .env || copy .env.exemple .env",
     "build": "tsc",
     "start": "node index.js"
   },
