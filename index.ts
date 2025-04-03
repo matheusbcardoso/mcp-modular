@@ -76,7 +76,7 @@ app.post("/message", express.json(), async (req, res) => {
 });
 
 // Inicia o servidor HTTP escutando na porta definida (3000 por padrão)
-const PORT = process.env.PORT || 3000;
+const PORT = parseInt(process.env.PORT || "3000", 10);
 app.listen(PORT, "0.0.0.0", () => {
-  //console.log(`Servidor MCP Modular disponível em http://localhost:${PORT}`);
+  console.log(`Servidor MCP Modular disponível em http://localhost:${PORT}`);
 });
